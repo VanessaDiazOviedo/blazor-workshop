@@ -81,7 +81,7 @@ form {
     }
 
     .nav-tab.active {
-        background-color: rgba(255,255,255,0.2);
+        background-color: #e94442;
         color: #fff2cc;
     }
 
@@ -141,25 +141,26 @@ form {
 
 .pizza-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 20rem);
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: 2rem;
     justify-content: center;
-    padding-left: 0;
+    padding: 2rem;
 }
 
     .pizza-cards > li {
-        height: 10rem;
+        height: 15rem;
         position: relative;
         background-size: cover;
-        border-radius: 0.5rem;
+        border-radius: 1rem;
         list-style-type: none;
-        box-shadow: 0 3px 4px rgba(0,0,0,0.4);
-        transition: 0.1s ease-out;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease-out;
     }
 
         .pizza-cards > li:hover {
-            transform: scale(1.02);
+            transform: scale(1.05);
         }
+
 
 .pizza-info {
     border-radius: 0.5rem;
